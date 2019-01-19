@@ -1312,10 +1312,6 @@ window.addEventListener('load', function () {
 
   var FirmarLista = __webpack_require__("63c9").default;
 
-  console.log({
-    path: FirmarLista.path,
-    component: FirmarLista
-  });
   window.router.addRoutes([{
     path: FirmarItem.path,
     component: FirmarItem
