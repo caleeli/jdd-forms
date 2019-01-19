@@ -8,14 +8,16 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 class ServiceProvider extends BaseServiceProvider
 {
 
+    const PluginName = 'subcep/firmas';
+
     /**
      * Inicializa el modulo
      */
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../dist' => public_path('modules/firmas'),
-            ], 'subcep-firmas');
-        JDD::addModule(['/modules/firmas/firmas.umd.js'], []);
+            __DIR__ . '/../dist' => public_path('modules/' . self::PluginName),
+            ], self::PluginName);
+        JDD::addModule(['/modules/' . self::PluginName . '/firmas.umd.js'], []);
     }
 }
