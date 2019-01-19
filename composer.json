@@ -21,5 +21,11 @@
             ]
         }
     },
+    "scripts": {
+        "publish": [
+            "npm run build-bundle",
+            "git commit -a"
+        ]
+    },
     "require": {}
 }

@@ -1,5 +1,6 @@
 <template>
-    <div>Hola mundo</div>
+    <desktop :links="links">
+    </desktop>
 </template>
 
 <script>
