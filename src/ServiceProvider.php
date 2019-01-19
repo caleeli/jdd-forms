@@ -14,7 +14,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../dist' => public_path('modules/firmas'),
+            __DIR__ . '/../dist' => public_path('modules/firmas'),
             ], 'subcep-firmas');
         JDD::addModule(['/modules/firmas/firmas.umd.js'], []);
     }
