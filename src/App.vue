@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <img alt="Vue logo" src="./assets/logo.svg">
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import Vue from 'vue';
+    import VueRouter from 'vue-router';
+    import {components} from 'jdd-vue-components';
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    const router = new VueRouter({});
+
+    // Global objects
+    window.taskMixin = {};
+    window.router = router;
+
+    window.ApiArray = function() {
+        return [];
+    };
+
+    // Load jdd components
+    Object.keys(components).forEach(name => {
+        Vue.component(name, components[name]);
+    });
+
+    // Load routes
+    require('./components/index.js');
+
+    Vue.use(VueRouter);
+
+    export default {
+        router,
+        name: 'app',
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
 </style>

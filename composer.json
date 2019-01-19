@@ -1,0 +1,25 @@
+{
+    "name": "subcep/firmas",
+    "description": "Firmas de hojas de ruta",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Subcep\\Firmas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Callizaya",
+            "email": "davidcallizaya@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Subcep\\Firmas\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
