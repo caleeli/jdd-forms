@@ -1,13 +1,11 @@
 
 window.addEventListener('load', () => {
-    const FirmarItem = require('./FirmarItem');
-    const FirmarLista = require('./FirmarLista');
-    const FirmarItemCmp = window.Vue.component('FirmarItem', FirmarItem);
-    const FirmarListaCmp = window.Vue.component('FirmarLista', FirmarLista);
-    console.log({path: FirmarLista.path ? FirmarLista.path : '/FirmarLista', component: FirmarListaCmp});
+    const FirmarItem = require('./FirmarItem').default;
+    const FirmarLista = require('./FirmarLista').default;
+    console.log({path: FirmarLista.path, component: FirmarLista});
     window.router.addRoutes([
-        {path: FirmarItem.path ? FirmarItem.path : '/FirmarItem', component: FirmarItemCmp},
-        {path: FirmarLista.path ? FirmarLista.path : '/FirmarLista', component: FirmarListaCmp}
+        {path: FirmarItem.path, component: FirmarItem},
+        {path: FirmarLista.path, component: FirmarLista}
     ]);
 });
 
