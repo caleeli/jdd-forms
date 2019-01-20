@@ -25,7 +25,7 @@ class ServiceProvider extends BaseServiceProvider
             // Stylesheets
             [],
             // BPMN
-            [__DIR__ . '../bpmn/FirmaHojaRuta.bpmn']
+            [realpath(__DIR__ . '/../bpmn/FirmaHojaRuta.bpmn')]
         );
     }
 }
