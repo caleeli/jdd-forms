@@ -1,4 +1,7 @@
 
+// Icon for start event "firmas"
+require('../assets/firmas.svg');
+
 window.addEventListener('load', () => {
     const FirmarItem = require('./FirmarItem').default;
     const FirmarLista = require('./FirmarLista').default;

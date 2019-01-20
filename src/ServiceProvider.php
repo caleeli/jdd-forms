@@ -18,6 +18,14 @@ class ServiceProvider extends BaseServiceProvider
         $this->publishes([
             __DIR__ . '/../dist' => public_path('modules/' . self::PluginName),
             ], self::PluginName);
-        JDD::addModule(['/modules/' . self::PluginName . '/firmas.umd.js'], []);
+        JDD::addModule(
+            self::PluginName,
+            // Javascripts
+            ['/modules/' . self::PluginName . '/firmas.umd.js'],
+            // Stylesheets
+            [],
+            // BPMN
+            [__DIR__ . '../bpmn/FirmaHojaRuta.bpmn']
+        );
     }
 }

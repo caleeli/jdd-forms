@@ -198,6 +198,13 @@ module.exports = __webpack_require__("9e1e") ? Object.defineProperties : functio
 
 /***/ }),
 
+/***/ "1e71":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/firmas.b8ae52a3.svg";
+
+/***/ }),
+
 /***/ "230e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1307,6 +1314,9 @@ if (typeof window !== 'undefined') {
 /* harmony default export */ var setPublicPath = (null);
 
 // CONCATENATED MODULE: ./src/components/index.js
+// Icon for start event "firmas"
+__webpack_require__("1e71");
+
 window.addEventListener('load', function () {
   var FirmarItem = __webpack_require__("2352").default;
 
