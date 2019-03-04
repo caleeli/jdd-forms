@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+const Vue = window.Vue;
+const Vuex = window.Vuex;
 import VuexUndoRedo from 'vuex-undo-redo';
 const _ = require('lodash');
 
-Vue.use(Vuex);
+//Vue.use(Vuex);
 
 function reference(base, element, path, passed) {
     path = path === undefined ? [] : path;

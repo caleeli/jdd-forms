@@ -41543,9 +41543,12 @@ var plugin_default = /*#__PURE__*/__webpack_require__.n(src_plugin);
 
 
 
+const AppUndoRedo_Vue = external_commonjs_vue_commonjs2_vue_root_Vue_default.a ? external_commonjs_vue_commonjs2_vue_root_Vue_default.a : window.Vue;
+const Vuex = vuex_esm ? vuex_esm : window.Vuex;
+
 const _ = __webpack_require__("2ef0");
 
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm);
+AppUndoRedo_Vue.use(Vuex);
 
 function reference(base, element, path, passed) {
     path = path === undefined ? [] : path;
@@ -41587,7 +41590,7 @@ const jsonProcess = JSON.stringify({
     JddContainer: []
 });
 
-let store = new vuex_esm.Store({
+let store = new Vuex.Store({
     state: {
         form: JSON.parse(jsonProcess),
     },
@@ -41600,7 +41603,7 @@ let store = new vuex_esm.Store({
         change(state, { ref, key, value }) {
             const target = _.get(state.form, ref);
             value = JSON.parse(JSON.stringify(value));
-            external_commonjs_vue_commonjs2_vue_root_Vue_default.a.set(target, key, value);
+            AppUndoRedo_Vue.set(target, key, value);
         },
         add(state, { ref, place, child }) {
             const target = ref ? _.get(state.form, ref) : state.form;
@@ -41694,7 +41697,7 @@ let store = new vuex_esm.Store({
     },
 });
 
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(plugin_default.a, { ignoreMutations: ['drag'] });
+AppUndoRedo_Vue.use(plugin_default.a, { ignoreMutations: ['drag'] });
 
 /* harmony default export */ var AppUndoRedo = ({
     store,
@@ -41734,13 +41737,12 @@ var keys_default = /*#__PURE__*/__webpack_require__.n(object_keys);
 
 
 
+var mixins_AppUndoRedo_Vue = window.Vue;
+var AppUndoRedo_Vuex = window.Vuex;
 
 
+var AppUndoRedo_ = __webpack_require__("2ef0"); //Vue.use(Vuex);
 
-
-var AppUndoRedo_ = __webpack_require__("2ef0");
-
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm);
 
 function AppUndoRedo_reference(base, element, path, passed) {
   path = path === undefined ? [] : path;
@@ -41810,7 +41812,7 @@ var AppUndoRedo_jsonProcess = stringify_default()({
   JddContainer: []
 });
 
-var AppUndoRedo_store = new vuex_esm.Store({
+var AppUndoRedo_store = new AppUndoRedo_Vuex.Store({
   state: {
     form: JSON.parse(AppUndoRedo_jsonProcess)
   },
@@ -41828,7 +41830,7 @@ var AppUndoRedo_store = new vuex_esm.Store({
       var target = AppUndoRedo_.get(state.form, ref);
 
       value = JSON.parse(stringify_default()(value));
-      external_commonjs_vue_commonjs2_vue_root_Vue_default.a.set(target, key, value);
+      mixins_AppUndoRedo_Vue.set(target, key, value);
     },
     add: function add(state, _ref3) {
       var ref = _ref3.ref,
@@ -41971,7 +41973,7 @@ var AppUndoRedo_store = new vuex_esm.Store({
     }
   }
 });
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(plugin_default.a, {
+mixins_AppUndoRedo_Vue.use(plugin_default.a, {
   ignoreMutations: ['drag']
 });
 /* harmony default export */ var mixins_AppUndoRedo = ({
