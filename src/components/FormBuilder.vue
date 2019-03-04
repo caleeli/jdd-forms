@@ -36,7 +36,7 @@ const Inspector = VueJddForm.Inspector;
 const Palete = VueJddForm.Palete;
 
 export default {
-  path: "/Construir/Formulario",
+  path: "/Forms/Editor",
   components: {
     JddForm,
     Inspector,
