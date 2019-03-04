@@ -1,19 +1,21 @@
 {
-  "name": "firmas",
+  "name": "jdd-forms",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name firmas ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name jdd-forms ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "vue": "^2.5.21",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vue-jdd-components": "https://github.com/caleeli/jdd-vue-components.git#master"
   },
   "devDependencies": {
-    "jdd-vue-components": "https://github.com/caleeli/jdd-vue-components.git#master",
+    "vue-jdd-form": "git+file:///Users/davidcallizaya/Netbeans/vue-jdd-form",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
     "@fortawesome/fontawesome-free": "^5.6.3",
     "bootstrap": "^4.2.1",
     "node-sass": "^4.11.0",

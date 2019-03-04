@@ -1,14 +1,14 @@
 <template>
     <div id="app">
         <img alt="Firmas logo" src="./assets/logo.svg">
-        
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
     import Vue from 'vue';
     import VueRouter from 'vue-router';
-    import {components} from 'jdd-vue-components';
+    import {components} from 'vue-jdd-components';
 
     const router = new VueRouter({});
 

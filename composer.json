@@ -1,11 +1,11 @@
 {
-    "name": "subcep/firmas",
-    "description": "Firmas de hojas de ruta",
+    "name": "jdd/forms",
+    "description": "Formularios JDD",
     "type": "library",
     "license": "LGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
-            "Subcep\\Firmas\\": "src/"
+            "JDD\\Forms\\": "src/"
         }
     },
     "authors": [
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Subcep\\Firmas\\ServiceProvider"
+                "JDD\\Forms\\ServiceProvider"
             ]
         }
     },
