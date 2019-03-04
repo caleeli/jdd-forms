@@ -41734,12 +41734,13 @@ var keys_default = /*#__PURE__*/__webpack_require__.n(object_keys);
 
 
 
-var AppUndoRedo_Vue = window.Vue;
-var Vuex = window.Vuex;
 
 
-var AppUndoRedo_ = __webpack_require__("2ef0"); //Vue.use(Vuex);
 
+
+var AppUndoRedo_ = __webpack_require__("2ef0");
+
+external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm);
 
 function AppUndoRedo_reference(base, element, path, passed) {
   path = path === undefined ? [] : path;
@@ -41809,7 +41810,7 @@ var AppUndoRedo_jsonProcess = stringify_default()({
   JddContainer: []
 });
 
-var AppUndoRedo_store = new Vuex.Store({
+var AppUndoRedo_store = new vuex_esm.Store({
   state: {
     form: JSON.parse(AppUndoRedo_jsonProcess)
   },
@@ -41827,7 +41828,7 @@ var AppUndoRedo_store = new Vuex.Store({
       var target = AppUndoRedo_.get(state.form, ref);
 
       value = JSON.parse(stringify_default()(value));
-      AppUndoRedo_Vue.set(target, key, value);
+      external_commonjs_vue_commonjs2_vue_root_Vue_default.a.set(target, key, value);
     },
     add: function add(state, _ref3) {
       var ref = _ref3.ref,
@@ -41970,7 +41971,7 @@ var AppUndoRedo_store = new Vuex.Store({
     }
   }
 });
-AppUndoRedo_Vue.use(plugin_default.a, {
+external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(plugin_default.a, {
   ignoreMutations: ['drag']
 });
 /* harmony default export */ var mixins_AppUndoRedo = ({
