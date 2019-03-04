@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <img alt="Firmas logo" src="./assets/logo.svg">
+        <router-link to="/Forms/Editor"><img alt="Firmas logo" src="./assets/logo.svg"></router-link>
         <router-view></router-view>
     </div>
 </template>

@@ -1,4 +1,6 @@
 
+// Icon for start event "forms"
+require('../assets/forms.svg');
 
 window.addEventListener('load', () => {
     const FormBuilder = require('./FormBuilder').default;
