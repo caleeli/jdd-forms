@@ -73165,6 +73165,13 @@ module.exports = !__webpack_require__("9e1e") && !__webpack_require__("79e5")(fu
 
 /***/ }),
 
+/***/ "c84f":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/forms.b60231f2.svg";
+
+/***/ }),
+
 /***/ "c8ba":
 /***/ (function(module, exports) {
 
@@ -78238,6 +78245,9 @@ if (typeof window !== 'undefined') {
 /* harmony default export */ var setPublicPath = (null);
 
 // CONCATENATED MODULE: ./src/components/index.js
+// Icon for start event "forms"
+__webpack_require__("c84f");
+
 window.addEventListener('load', function () {
   var FormBuilder = __webpack_require__("6a29").default;
 
