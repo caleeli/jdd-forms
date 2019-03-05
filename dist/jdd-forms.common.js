@@ -41543,8 +41543,9 @@ var plugin_default = /*#__PURE__*/__webpack_require__.n(src_plugin);
 
 
 
-const AppUndoRedo_Vue = external_commonjs_vue_commonjs2_vue_root_Vue_default.a ? external_commonjs_vue_commonjs2_vue_root_Vue_default.a : window.Vue;
-const Vuex = vuex_esm ? vuex_esm : window.Vuex;
+const AppUndoRedo_Vue = window.Vue ? window.Vue : external_commonjs_vue_commonjs2_vue_root_Vue_default.a;
+const Vuex = window.Vuex ? window.Vuex : vuex_esm;
+
 
 const _ = __webpack_require__("2ef0");
 
