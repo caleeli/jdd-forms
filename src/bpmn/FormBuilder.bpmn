@@ -6,7 +6,7 @@
       <yaoqiang:pageFormat height="841.8897637795276" imageableHeight="831.8897637795276" imageableWidth="588.1102362204724" imageableX="5.0" imageableY="5.0" orientation="0" width="598.1102362204724"/>
       <yaoqiang:page background="#FFFFFF" horizontalCount="1" verticalCount="1"/>
     </extensionElements>
-    <userTask completionQuantity="1" id="_3" implementation="/Construir/Formulario" isForCompensation="false" name="Formulario" startQuantity="1">
+    <userTask completionQuantity="1" id="_3" implementation="/Forms/Editor" isForCompensation="false" name="Formulario" startQuantity="1">
       <documentation id="_3_D_1" textFormat="text/plain"><![CDATA[Seleccionar una hoja de ruta a ser firmada]]></documentation>
       <extensionElements>
         <yaoqiang:style fillColor="#99FFFF"/>
