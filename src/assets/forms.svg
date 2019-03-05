@@ -1,15 +1,15 @@
-<svg width="120px" height="140px" viewBox="0 0 120 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="60px" height="70px" viewBox="0 0 60 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="forms" stroke="#4A90E2">
-            <rect id="Rectangle" stroke-width="4" fill="#FFFFFF" x="2" y="2" width="116" height="136" rx="8"></rect>
-            <g id="Group" transform="translate(36.000000, 13.000000)" fill="#4A90E2">
-                <path d="M16.8084508,75.8714987 C27.1420878,82.0258518 7.84412659,90.4732203 0.58712843,85.4092273 C7.74640263,87.946205 9.10160362,71.2815697 16.8084508,75.8714987 Z" id="Path-5"></path>
-                <path d="M16.7303973,67.7214653 C16.0969964,69.2065549 16.0969964,70.3372527 16.4174924,71.590987 C17.4313253,75.5569565 24.2851771,76.2341614 26.5609994,73.0574266 C28.4374582,70.4381485 43.5582026,46.2553646 71.9232327,0.509074886 L16.7303973,67.7214653 Z" id="Path-6"></path>
+            <rect id="Rectangle" stroke-width="4" fill="#FFFFFF" x="2" y="2" width="56" height="66" rx="8"></rect>
+            <g id="Group" transform="translate(18.000000, 6.500000)" fill="#4A90E2">
+                <path d="M8.40422542,37.9357493 C13.5710439,41.0129259 3.92206329,45.2366101 0.293564215,42.7046137 C3.87320132,43.9731025 4.55080181,35.6407849 8.40422542,37.9357493 Z" id="Path-5"></path>
+                <path d="M8.36519865,33.8607327 C8.0484982,34.6032774 8.0484982,35.1686263 8.20874619,35.7954935 C8.71566267,37.7784782 12.1425885,38.1170807 13.2804997,36.5287133 C14.2187291,35.2190743 21.7791013,23.1276823 35.9616163,0.254537443 L8.36519865,33.8607327 Z" id="Path-6"></path>
             </g>
-            <rect id="Rectangle" stroke-width="3" x="17.5" y="35.5" width="37" height="37" rx="8"></rect>
-            <path d="M15.509668,106 L52.2064309,106" id="Line-9" stroke-width="3" stroke-linecap="square"></path>
-            <path d="M16,116 L107.923233,116" id="Line-10" stroke-width="3" stroke-linecap="square"></path>
-            <path d="M16,126 L107.923233,126" id="Line-11" stroke-width="3" stroke-linecap="square"></path>
+            <rect id="Rectangle" stroke-width="3" x="9.5" y="18.5" width="17" height="17" rx="4"></rect>
+            <path d="M7.754834,53 L26.1032155,53" id="Line-9" stroke-width="3" stroke-linecap="square"></path>
+            <path d="M8,58 L52,58" id="Line-10" stroke-width="3" stroke-linecap="square"></path>
+            <path d="M8,63 L52,63" id="Line-11" stroke-width="3" stroke-linecap="square"></path>
         </g>
     </g>
 </svg>

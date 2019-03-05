@@ -65200,7 +65200,7 @@ exports.f = Object.getOwnPropertySymbols;
 /***/ "9b19":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logo.b60231f2.svg";
+module.exports = __webpack_require__.p + "img/logo.8547c9da.svg";
 
 /***/ }),
 
@@ -73172,7 +73172,7 @@ module.exports = !__webpack_require__("9e1e") && !__webpack_require__("79e5")(fu
 /***/ "c84f":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/forms.b60231f2.svg";
+module.exports = __webpack_require__.p + "img/forms.8547c9da.svg";
 
 /***/ }),
 
