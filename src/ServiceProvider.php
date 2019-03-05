@@ -22,7 +22,7 @@ class ServiceProvider extends BaseServiceProvider
             // Javascripts
             ['/modules/' . self::PluginName . '/jdd-forms.umd.js'],
             // Stylesheets
-            [],
+            ['/modules/' . self::PluginName . '/jdd-forms.css'],
             // BPMN
             [realpath(__DIR__ . '/bpmn/FormBuilder.bpmn')]
         );
