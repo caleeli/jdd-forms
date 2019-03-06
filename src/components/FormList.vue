@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  path: "/Forms/Lista",
+  path: "/Forms/List",
   mixins: [window.taskMixin],
   computed: {
     links() {
