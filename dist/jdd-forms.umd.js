@@ -39922,12 +39922,12 @@ module.exports = function (it, key) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=d8f7d27a&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=1810fd22&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('panel',{staticClass:"panel-primary",attrs:{"name":"Construir formulario"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[(_vm.data.attributes)?_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.data.attributes.name),expression:"data.attributes.name"}],staticClass:"form-control d-inline-block",staticStyle:{"width":"16em"},domProps:{"value":(_vm.data.attributes.name)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.data.attributes, "name", $event.target.value)}}}):_vm._e(),_c('div',{staticClass:"d-inline-block"},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.save}},[_c('i',{staticClass:"fas fa-save"})]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.undo}},[_vm._v("Undo")]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canRedo},on:{"click":_vm.redo}},[_vm._v("Redo")])]),_c('palete',{staticClass:"d-inline-block",model:{value:(_vm.palete),callback:function ($$v) {_vm.palete=$$v},expression:"palete"}})],1),_c('div',{staticClass:"col-8"},[_c('jdd-form',{attrs:{"root":_vm.me},model:{value:(_vm.form),callback:function ($$v) {_vm.form=$$v},expression:"form"}})],1),_c('div',{staticClass:"col-4"},[(_vm.selected)?_c('inspector',{attrs:{"element":_vm.selectedElement,"root":_vm.me},model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}}):_vm._e()],1)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=d8f7d27a&
+// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=1810fd22&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js
 var stringify = __webpack_require__("f499");
@@ -42003,7 +42003,6 @@ var AppUndoRedo_store = new AppUndoRedo_Vuex.Store({
   },
   actions: {
     loadContent: function loadContent(context, content) {
-      console.log('Load content:', content);
       AppUndoRedo_jsonProcess = stringify_default()(content);
     },
 
@@ -42272,8 +42271,12 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
       handler: function handler() {
         this.$store.dispatch('loadContent', this.data.attributes.content);
 
-        while (this.canUndo) {
-          this.undo();
+        if (!this.canUndo) {
+          this.$store.commit('emptyState');
+        } else {
+          while (this.canUndo) {
+            this.undo();
+          }
         }
       },
       deep: true

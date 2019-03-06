@@ -164,8 +164,12 @@ export default {
     'data':{
       handler() {
         this.$store.dispatch('loadContent', this.data.attributes.content);
-        while(this.canUndo) {
-          this.undo();
+        if (!this.canUndo) {
+          this.$store.commit('emptyState');
+        } else {
+          while(this.canUndo) {
+            this.undo();
+          }
         }
       },
       deep:true,
