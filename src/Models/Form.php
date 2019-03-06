@@ -2,14 +2,12 @@
 
 namespace JDD\Forms\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Model;
 
 class Form extends Model
 {
     protected $table = 'forms';
     public $timestamps = true;
-
-    protected $connection = 'hr';
 
     protected $dates = ['deleted_at'];
     protected $fillable = ['name', 'content', 'state'];
