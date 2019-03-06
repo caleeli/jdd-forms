@@ -141,6 +141,7 @@ export default {
   },
   methods: {
     save() {
+      this.data.attributes.content = JSON.parse(JSON.stringify(this.form));
       if (this.data.id) {
           this.data.putToAPI("/api/form/" + this.data.id).then(() => {
               this.$router.push(this.$processCompleteRoute({accion:"completar"}));
