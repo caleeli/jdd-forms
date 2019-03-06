@@ -6,7 +6,6 @@
         <div class="d-inline-block">
           <button
             type="button"
-            :disabled="!canUndo"
             @click="save"
             class="btn btn-outline-secondary btn-sm"
           ><i class="fas fa-save"></i></button>
