@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-12">
         <div class="d-inline-block">
+          <input v-if="data.attributes" class="form-control" v-model="data.attributes.name">
           <button
             type="button"
             :disabled="!canUndo"
