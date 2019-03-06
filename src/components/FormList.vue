@@ -37,7 +37,7 @@ export default {
     return {
       pendientes: new window.ApiArray(
         "/api/forms?sort=-id&per_page=200"
-      )
+      ).loadFromAPI()
     };
   }
 };
