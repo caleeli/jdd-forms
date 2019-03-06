@@ -13,5 +13,6 @@ class Form extends Model
 
     protected $dates = ['deleted_at'];
     protected $fillable = ['name', 'content', 'state'];
+    protected $attributes = ['name' => '', 'content' => '{}', 'state' => 'public'];
     protected $visible = ['name', 'content', 'state'];
 }

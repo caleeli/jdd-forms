@@ -130,7 +130,7 @@ export default {
     });
     const errores = {};
     return {
-      form: new ApiObject('/api/form/' + this.$route.params.id, errores),
+      data: new window.ApiObject('/api/form/' + this.$route.params.id, errores),
       selected: this.form,
       selectedElement: null,
       palete: {
@@ -140,8 +140,8 @@ export default {
   },
   methods: {
     save() {
-      if (this.form.id) {
-          this.form.putToAPI("/api/form/" + this.form.id).then(() => {
+      if (this.data.id) {
+          this.data.putToAPI("/api/form/" + this.form.id).then(() => {
               this.$router.push(this.$processCompleteRoute({accion:"completar"}));
           });
       }
@@ -153,14 +153,17 @@ export default {
   },
   watch: {
     '$route.params.id' () {
-      this.form.loadFromAPI('/api/form/' + this.$route.params.id);
+      this.data.loadFromAPI('/api/form/' + this.$route.params.id);
     },
-    'form' () {
-      this.$store.dispatch('loadContent', this.form.attributes.content);
-      while(this.canUndo) {
-        this.undo();
-      }
-    },
+    'data':{
+      handler() {
+        this.$store.dispatch('loadContent', this.form.attributes.content);
+        while(this.canUndo) {
+          this.undo();
+        }
+      },
+      deep:true,
+    }
   },
 };
 </script>
