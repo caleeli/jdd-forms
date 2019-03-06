@@ -141,7 +141,7 @@ export default {
   methods: {
     save() {
       if (this.data.id) {
-          this.data.putToAPI("/api/form/" + this.form.id).then(() => {
+          this.data.putToAPI("/api/form/" + this.data.id).then(() => {
               this.$router.push(this.$processCompleteRoute({accion:"completar"}));
           });
       }
@@ -157,7 +157,7 @@ export default {
     },
     'data':{
       handler() {
-        this.$store.dispatch('loadContent', this.form.attributes.content);
+        this.$store.dispatch('loadContent', this.data.attributes.content);
         while(this.canUndo) {
           this.undo();
         }
