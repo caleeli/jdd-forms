@@ -39922,12 +39922,12 @@ module.exports = function (it, key) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=9971b9ac&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=20704b24&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('panel',{staticClass:"panel-primary",attrs:{"name":"Construir formulario"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('div',{staticClass:"d-inline-block"},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.save}},[_c('i',{staticClass:"fas fa-save"})]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.undo}},[_vm._v("Undo")]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canRedo},on:{"click":_vm.redo}},[_vm._v("Redo")])]),_c('palete',{staticClass:"d-inline-block",model:{value:(_vm.palete),callback:function ($$v) {_vm.palete=$$v},expression:"palete"}})],1),_c('div',{staticClass:"col-8"},[_c('jdd-form',{attrs:{"root":_vm.me},model:{value:(_vm.form),callback:function ($$v) {_vm.form=$$v},expression:"form"}})],1),_c('div',{staticClass:"col-4"},[(_vm.selected)?_c('inspector',{attrs:{"element":_vm.selectedElement,"root":_vm.me},model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}}):_vm._e()],1)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=9971b9ac&
+// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=20704b24&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/JddForm.vue?vue&type=template&id=565d9bd6&scoped=true&
 var JddFormvue_type_template_id_565d9bd6_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('drop',{staticClass:"form-contain",on:{"dragover":_vm.handleDragover,"drop":_vm.handleDrop}},_vm._l((_vm.jddContainers),function(jddContainer,index){return _c('jdd-container',{key:index,attrs:{"root":_vm.root},model:{value:(_vm.jddContainers[index]),callback:function ($$v) {_vm.$set(_vm.jddContainers, index, $$v)},expression:"jddContainers[index]"}})}),1)}
@@ -42136,7 +42136,7 @@ var FormBuildervue_type_script_lang_js_JddForm = src.JddForm;
 var FormBuildervue_type_script_lang_js_Inspector = src.Inspector;
 var FormBuildervue_type_script_lang_js_Palete = src.Palete;
 /* harmony default export */ var FormBuildervue_type_script_lang_js_ = ({
-  path: "/Forms/Editor",
+  path: "/Forms/Editor/:id",
   components: {
     JddForm: FormBuildervue_type_script_lang_js_JddForm,
     Inspector: FormBuildervue_type_script_lang_js_Inspector,

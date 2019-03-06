@@ -3,14 +3,13 @@
 namespace JDD\Forms\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Form extends Model
 {
     protected $table = 'forms';
     public $timestamps = true;
 
-    use SoftDeletes;
+    protected $connection = 'hr';
 
     protected $dates = ['deleted_at'];
     protected $fillable = ['name', 'content', 'state'];
