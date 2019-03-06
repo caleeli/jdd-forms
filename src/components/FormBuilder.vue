@@ -2,7 +2,7 @@
   <panel name="Construir formulario" class="panel-primary">
     <div class="row">
       <div class="col-12">
-        <input v-if="data.attributes" class="form-control d-inline-block" v-model="data.attributes.name" style="width:16em;">
+        <input class="form-control d-inline-block" v-model="title" style="width:16em;">
         <div class="d-inline-block">
           <button
             type="button"
@@ -131,6 +131,7 @@ export default {
     });
     const errores = {};
     return {
+      title: '',
       data: new window.ApiObject('/api/form/' + this.$route.params.id, errores),
       selected: this.form,
       selectedElement: null,
@@ -142,6 +143,7 @@ export default {
   methods: {
     save() {
       this.data.attributes.content = JSON.parse(JSON.stringify(this.form));
+      this.data.attributes.name = this.title;
       if (this.data.id) {
           this.data.putToAPI("/api/form/" + this.data.id).then(() => {
               this.$router.push(this.$processCompleteRoute({accion:"completar"}));
@@ -164,6 +166,7 @@ export default {
     'data':{
       handler() {
         this.$store.dispatch('loadContent', this.data.attributes.content);
+        this.title = this.data.attributes.name;
         if (!this.canUndo) {
           this.$store.commit('emptyState');
         } else {
