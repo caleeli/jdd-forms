@@ -132,7 +132,7 @@ export default {
     const errores = {};
     return {
       title: '',
-      data: new window.ApiObject('/api/form/' + this.$route.params.id, errores),
+      data: new window.ApiObject('/api/form/' + this.$route.params.id, errores, true),
       selected: this.form,
       selectedElement: null,
       palete: {
