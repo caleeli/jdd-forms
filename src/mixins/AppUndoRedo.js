@@ -107,7 +107,7 @@ let store = new Vuex.Store({
         },
     },
     actions: {
-        loadContent(content) {
+        loadContent(context, content) {
             console.log('Load content:', content);
             jsonProcess = JSON.stringify(content);
         },

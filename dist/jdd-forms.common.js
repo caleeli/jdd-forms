@@ -41993,7 +41993,7 @@ var AppUndoRedo_store = new AppUndoRedo_Vuex.Store({
     }
   },
   actions: {
-    loadContent: function loadContent(content) {
+    loadContent: function loadContent(context, content) {
       console.log('Load content:', content);
       AppUndoRedo_jsonProcess = stringify_default()(content);
     },
