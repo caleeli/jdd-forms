@@ -25,8 +25,8 @@ export default {
       this.pendientes.forEach(item => {
         links.push({
           text: item.attributes.name,
-          description: '(' + item.attributes.name + ')',
-          href: this.$processCompleteRoute({ item: item.attributes.id }),
+          description: '(' + item.id + ')',
+          href: this.$processCompleteRoute({ item: item.id }),
           icon: require("../assets/logo.svg")
         });
       });

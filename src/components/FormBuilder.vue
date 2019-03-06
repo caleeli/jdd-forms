@@ -2,8 +2,8 @@
   <panel name="Construir formulario" class="panel-primary">
     <div class="row">
       <div class="col-12">
+        <input v-if="data.attributes" class="form-control d-inline-block" v-model="data.attributes.name" style="width:16em;">
         <div class="d-inline-block">
-          <input v-if="data.attributes" class="form-control d-inline-block" v-model="data.attributes.name">
           <button
             type="button"
             :disabled="!canUndo"
