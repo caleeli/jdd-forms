@@ -17,7 +17,7 @@ class CreateFormsTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->string('name', 200)->unique();
-            $table->text('content')->default('{}');
+            $table->text('content');
             $table->enum('state', ['public', 'draft']);
         });
     }
