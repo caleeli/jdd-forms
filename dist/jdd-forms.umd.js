@@ -38460,12 +38460,12 @@ module.exports = function (R, S) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormList.vue?vue&type=template&id=3d057ceb&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormList.vue?vue&type=template&id=25cd1b9e&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('panel',{staticClass:"panel-primary",attrs:{"name":"Selecciona un formulario"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('desktop',{attrs:{"links":_vm.links}})],1)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormList.vue?vue&type=template&id=3d057ceb&
+// CONCATENATED MODULE: ./src/components/FormList.vue?vue&type=template&id=25cd1b9e&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("7f7f");
@@ -38516,7 +38516,7 @@ var web_dom_iterable = __webpack_require__("ac6a");
   },
   data: function data() {
     return {
-      pendientes: new window.ApiArray("/api/forms?sort=-id&filter[]=whereNull,firma&per_page=200")
+      pendientes: new window.ApiArray("/api/forms?sort=-id&per_page=200")
     };
   }
 });
