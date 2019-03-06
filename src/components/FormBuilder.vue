@@ -144,6 +144,10 @@ export default {
           this.data.putToAPI("/api/form/" + this.data.id).then(() => {
               this.$router.push(this.$processCompleteRoute({accion:"completar"}));
           });
+      } else {
+          this.data.postToAPI("/api/form").then(() => {
+              this.$router.push(this.$processCompleteRoute({accion:"completar"}));
+          });
       }
     },
     select(selected, element) {
