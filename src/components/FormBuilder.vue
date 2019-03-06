@@ -6,6 +6,12 @@
           <button
             type="button"
             :disabled="!canUndo"
+            @click="save"
+            class="btn btn-outline-secondary btn-sm"
+          ><i class="fas fa-save"></i></button>
+          <button
+            type="button"
+            :disabled="!canUndo"
             @click="undo"
             class="btn btn-outline-secondary btn-sm"
           >Undo</button>
@@ -122,7 +128,9 @@ export default {
         $: {}
       }
     });
+    const errores = {};
     return {
+      form: new ApiObject('/api/form/' + this.$route.params.id, errores),
       selected: this.form,
       selectedElement: null,
       palete: {
@@ -131,10 +139,28 @@ export default {
     };
   },
   methods: {
+    save() {
+      if (this.form.id) {
+          this.form.putToAPI("/api/form/" + this.form.id).then(() => {
+              this.$router.push(this.$processCompleteRoute({accion:"completar"}));
+          });
+      }
+    },
     select(selected, element) {
       this.selected = selected;
       this.selectedElement = element;
     }
-  }
+  },
+  watch: {
+    '$route.params.id' () {
+      this.form.loadFromAPI('/api/form/' + this.$route.params.id);
+    },
+    'form' () {
+      this.$store.dispatch('loadContent', this.form.attributes.content);
+      while(this.canUndo) {
+        this.undo();
+      }
+    },
+  },
 };
 </script>

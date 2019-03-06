@@ -4,6 +4,7 @@ namespace JDD\Forms;
 
 use App\Facades\JDD;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use JDD\Forms\Models\Form;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -24,7 +25,10 @@ class ServiceProvider extends BaseServiceProvider
             // Stylesheets
             ['/modules/' . self::PluginName . '/jdd-forms.css'],
             // BPMN
-            [realpath(__DIR__ . '/bpmn/FormBuilder.bpmn')]
+            [realpath(__DIR__ . '/bpmn/FormBuilder.bpmn')],
+            // Models
+            [Form::class]
         );
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
     }
 }

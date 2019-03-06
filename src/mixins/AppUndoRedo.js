@@ -37,7 +37,7 @@ function reference(base, element, path, passed) {
     }
 }
 
-const jsonProcess = JSON.stringify({
+let jsonProcess = JSON.stringify({
     $: {
         title: "Form title",
         post: "http://subcep.com"
@@ -107,6 +107,9 @@ let store = new Vuex.Store({
         },
     },
     actions: {
+        loadContent(content) {
+            jsonProcess = JSON.stringify(content);
+        },
         /**
          * Move a point during the drag operation.
          * 
