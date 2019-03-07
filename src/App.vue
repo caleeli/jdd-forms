@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <router-link to="/Forms/Editor"><img alt="Firmas logo" src="./assets/logo.svg"></router-link>
+        <router-link to="/Forms/Editor/new"><img alt="Firmas logo" src="./assets/logo.svg"></router-link>
         <router-view></router-view>
     </div>
 </template>
@@ -18,6 +18,11 @@
 
     window.ApiArray = function() {
         return [];
+    };
+    window.ApiObject = function() {
+        this.loadFromAPI = function () {
+            return this;
+        };
     };
 
     // Load jdd components

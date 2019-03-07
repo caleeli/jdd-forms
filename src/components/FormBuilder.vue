@@ -10,6 +10,18 @@
             class="btn btn-outline-secondary btn-sm"
           ><i class="fas fa-save"></i></button>
           <button
+            v-show="mode==='design'"
+            type="button"
+            @click="preview"
+            class="btn btn-outline-secondary btn-sm"
+          ><i class="fas fa-play"></i></button>
+          <button
+            v-show="mode==='preview'"
+            type="button"
+            @click="design"
+            class="btn btn-outline-secondary btn-sm"
+          ><i class="fas fa-pencil-ruler"></i></button>
+          <button
             type="button"
             :disabled="!canUndo"
             @click="undo"
@@ -25,9 +37,9 @@
         <palete class="d-inline-block" v-model="palete"/>
       </div>
       <div class="col-8">
-        <jdd-form v-model="form" :root="me"/>
+        <jdd-form :class="formClass" v-model="form" :root="me"/>
       </div>
-      <div class="col-4">
+      <div class="col-4" v-show="mode==='design'">
         <inspector v-if="selected" v-model="selected" :element="selectedElement" :root="me"/>
       </div>
     </div>
@@ -52,7 +64,10 @@ export default {
   computed: {
     me() {
       return this;
-    }
+    },
+    formClass() {
+      return this.mode === 'design' ? 'form-design' : 'form-view';
+    },
   },
   data() {
     const paleteItems = [];
@@ -130,6 +145,7 @@ export default {
     });
     const errores = {};
     return {
+      mode: 'design',
       title: '',
       data: new window.ApiObject('/api/form/' + this.$route.params.id, errores).loadFromAPI(),
       selected: this.form,
@@ -140,6 +156,12 @@ export default {
     };
   },
   methods: {
+    design() {
+      this.mode = 'design';
+    },
+    preview() {
+      this.mode = 'preview';
+    },
     save() {
       this.data.attributes.content = JSON.parse(JSON.stringify(this.form));
       this.data.attributes.name = this.title;
