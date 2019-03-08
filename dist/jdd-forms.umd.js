@@ -40071,12 +40071,12 @@ var Propertyvue_type_template_id_1aca7d0c_scoped_true_staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/Property.vue?vue&type=template&id=1aca7d0c&scoped=true&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/PropertyHtml.vue?vue&type=template&id=f9149706&
-var PropertyHtmlvue_type_template_id_f9149706_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('editor',{attrs:{"api-key":_vm.apiKey},on:{"onChange":_vm.change},model:{value:(_vm.innerValue),callback:function ($$v) {_vm.innerValue=$$v},expression:"innerValue"}})}
-var PropertyHtmlvue_type_template_id_f9149706_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/PropertyHtml.vue?vue&type=template&id=47338d06&
+var PropertyHtmlvue_type_template_id_47338d06_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('editor',{attrs:{"value":_vm.innerValue,"api-key":_vm.apiKey},on:{"input":_vm.change}})}
+var PropertyHtmlvue_type_template_id_47338d06_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/PropertyHtml.vue?vue&type=template&id=f9149706&
+// CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/PropertyHtml.vue?vue&type=template&id=47338d06&
 
 // CONCATENATED MODULE: ./node_modules/@tinymce/tinymce-vue/lib/es2015/Utils.js
 /**
@@ -40388,27 +40388,21 @@ var Editor = {
     apiKey: null
   },
   data: function data() {
-    return {
-      innerValue: ""
-    };
+    return {};
   },
-  watch: {
-    value: {
-      inmediate: true,
-      handler: function handler(value) {
-        if (value) {
-          var parsed = JSON.parse(value);
-          var newValue = parsed ? parsed.substr(5, parsed.length - 11) : "";
-          this.innerValue != newValue ? this.innerValue = newValue : null;
-        } else {
-          this.innerValue = '';
-        }
+  computed: {
+    innerValue: function innerValue() {
+      if (this.value) {
+        var parsed = JSON.parse(this.value);
+        return parsed ? parsed.substr(5, parsed.length - 11) : "";
       }
+
+      return '';
     }
   },
   methods: {
-    change: function change() {
-      this.$emit("input", stringify_default()("<div>" + this.innerValue + "</div>"));
+    change: function change(value) {
+      this.$emit("input", stringify_default()("<div>" + value + "</div>"));
     }
   }
 });
@@ -40424,8 +40418,8 @@ var Editor = {
 
 var PropertyHtml_component = Object(componentNormalizer["a" /* default */])(
   components_PropertyHtmlvue_type_script_lang_js_,
-  PropertyHtmlvue_type_template_id_f9149706_render,
-  PropertyHtmlvue_type_template_id_f9149706_staticRenderFns,
+  PropertyHtmlvue_type_template_id_47338d06_render,
+  PropertyHtmlvue_type_template_id_47338d06_staticRenderFns,
   false,
   null,
   null,
