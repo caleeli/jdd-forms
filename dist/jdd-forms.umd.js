@@ -39951,12 +39951,12 @@ module.exports = function (it, key) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=1472a056&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('panel',{staticClass:"panel-primary",attrs:{"name":"Construir formulario"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.title),expression:"title"}],staticClass:"form-control d-inline-block",staticStyle:{"width":"16em"},domProps:{"value":(_vm.title)},on:{"input":function($event){if($event.target.composing){ return; }_vm.title=$event.target.value}}}),_c('div',{staticClass:"d-inline-block"},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.save}},[_c('i',{staticClass:"fas fa-save"})]),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='design'),expression:"mode==='design'"}],staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.preview}},[_c('i',{staticClass:"fas fa-play"})]),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='preview'),expression:"mode==='preview'"}],staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.design}},[_c('i',{staticClass:"fas fa-pencil-ruler"})]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.undo}},[_vm._v("Undo")]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canRedo},on:{"click":_vm.redo}},[_vm._v("Redo")])]),_c('palete',{staticClass:"d-inline-block",model:{value:(_vm.palete),callback:function ($$v) {_vm.palete=$$v},expression:"palete"}})],1),_c('div',{staticClass:"col-8"},[_c('jdd-form',{class:_vm.formClass,attrs:{"root":_vm.me},model:{value:(_vm.form),callback:function ($$v) {_vm.form=$$v},expression:"form"}})],1),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='design'),expression:"mode==='design'"}],staticClass:"col-4"},[(_vm.selected)?_c('inspector',{attrs:{"element":_vm.selectedElement,"root":_vm.me},model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}}):_vm._e()],1)])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormBuilder.vue?vue&type=template&id=39485fb4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('panel',{staticClass:"panel-primary",attrs:{"name":"Construir formulario"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.title),expression:"title"}],staticClass:"form-control d-inline-block",staticStyle:{"width":"16em"},domProps:{"value":(_vm.title)},on:{"input":function($event){if($event.target.composing){ return; }_vm.title=$event.target.value}}}),_c('div',{staticClass:"d-inline-block"},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.save}},[_c('i',{staticClass:"fas fa-save"})]),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='design'),expression:"mode==='design'"}],staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.preview}},[_c('i',{staticClass:"fas fa-play"})]),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='preview'),expression:"mode==='preview'"}],staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button"},on:{"click":_vm.design}},[_c('i',{staticClass:"fas fa-pencil-ruler"})]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canUndo},on:{"click":_vm.undo}},[_c('i',{staticClass:"fas fa-undo"})]),_c('button',{staticClass:"btn btn-outline-secondary btn-sm",attrs:{"type":"button","disabled":!_vm.canRedo},on:{"click":_vm.redo}},[_c('i',{staticClass:"fas fa-redo"})])]),_c('palete',{staticClass:"d-inline-block",model:{value:(_vm.palete),callback:function ($$v) {_vm.palete=$$v},expression:"palete"}})],1),_c('div',{staticClass:"col-8"},[_c('jdd-form',{class:_vm.formClass,attrs:{"root":_vm.me},model:{value:(_vm.form),callback:function ($$v) {_vm.form=$$v},expression:"form"}})],1),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.mode==='design'),expression:"mode==='design'"}],staticClass:"col-4"},[(_vm.selected)?_c('inspector',{attrs:{"element":_vm.selectedElement,"root":_vm.me},model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}}):_vm._e()],1)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=1472a056&
+// CONCATENATED MODULE: ./src/components/FormBuilder.vue?vue&type=template&id=39485fb4&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("7f7f");
@@ -40599,12 +40599,12 @@ var Paletevue_type_template_id_6f6138c7_staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/Palete.vue?vue&type=template&id=6f6138c7&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/PaleteItem.vue?vue&type=template&id=42eaf1ab&
-var PaleteItemvue_type_template_id_42eaf1ab_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('drag',{staticStyle:{"display":"inline-block"},attrs:{"transfer-data":_vm.value}},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])}
-var PaleteItemvue_type_template_id_42eaf1ab_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22550d4c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/PaleteItem.vue?vue&type=template&id=cd25a626&
+var PaleteItemvue_type_template_id_cd25a626_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('drag',{staticStyle:{"display":"inline-block"},attrs:{"transfer-data":_vm.value}},[_c('button',{staticClass:"btn btn-outline-secondary btn-sm"},[(_vm.icon)?_c('i',{class:_vm.icon}):_vm._e(),_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])])}
+var PaleteItemvue_type_template_id_cd25a626_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/PaleteItem.vue?vue&type=template&id=42eaf1ab&
+// CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/components/PaleteItem.vue?vue&type=template&id=cd25a626&
 
 // CONCATENATED MODULE: ./node_modules/vue-jdd-form/src/mixins/PaleteItem.js
 
@@ -40612,6 +40612,7 @@ var PaleteItemvue_type_template_id_42eaf1ab_staticRenderFns = []
 });
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-jdd-form/src/components/PaleteItem.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -40632,6 +40633,9 @@ var PaleteItemvue_type_template_id_42eaf1ab_staticRenderFns = []
   computed: {
     label: function label() {
       return this.value.label;
+    },
+    icon: function icon() {
+      return this.value.icon + ' text-dark';
     }
   }
 });
@@ -40647,8 +40651,8 @@ var PaleteItemvue_type_template_id_42eaf1ab_staticRenderFns = []
 
 var PaleteItem_component = Object(componentNormalizer["a" /* default */])(
   components_PaleteItemvue_type_script_lang_js_,
-  PaleteItemvue_type_template_id_42eaf1ab_render,
-  PaleteItemvue_type_template_id_42eaf1ab_staticRenderFns,
+  PaleteItemvue_type_template_id_cd25a626_render,
+  PaleteItemvue_type_template_id_cd25a626_staticRenderFns,
   false,
   null,
   null,
@@ -42199,6 +42203,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddContainer",
       label: "Contenedor",
+      icon: "far fa-square",
       content: {
         tag: "JddContainer",
         class: "row",
@@ -42211,6 +42216,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddControl",
       label: "Texto",
+      icon: "fas fa-font",
       inspector: {
         template: {
           component: "PropertyHtml",
@@ -42231,6 +42237,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddControl",
       label: "Caja texto simple",
+      icon: "fas fa-i-cursor",
       inspector: {},
       content: {
         tag: "JddControl",
@@ -42242,6 +42249,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddControl",
       label: "Caja texto",
+      icon: "fas fa-align-justify",
       inspector: {},
       content: {
         tag: "JddControl",
@@ -42253,6 +42261,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddControl",
       label: "Check",
+      icon: "far fa-check-square",
       inspector: {},
       content: {
         tag: "JddControl",
@@ -42264,6 +42273,7 @@ var FormBuildervue_type_script_lang_js_Palete = src.Palete;
     paleteItems.push({
       tag: "JddControl",
       label: "Subir Doc.",
+      icon: "fas fa-upload",
       inspector: {},
       content: {
         tag: "JddControl",
