@@ -26,13 +26,13 @@
             :disabled="!canUndo"
             @click="undo"
             class="btn btn-outline-secondary btn-sm"
-          >Undo</button>
+          ><i class="fas fa-undo"></i></button>
           <button
             type="button"
             :disabled="!canRedo"
             @click="redo"
             class="btn btn-outline-secondary btn-sm"
-          >Redo</button>
+          ><i class="fas fa-redo"></i></button>
         </div>
         <palete class="d-inline-block" v-model="palete"/>
       </div>
@@ -75,6 +75,7 @@ export default {
     paleteItems.push({
       tag: "JddContainer",
       label: "Contenedor",
+      icon: "far fa-square",
       content: {
         tag: "JddContainer",
         class: "row",
@@ -87,6 +88,7 @@ export default {
     paleteItems.push({
       tag: "JddControl",
       label: "Texto",
+      icon: "fas fa-font",
       inspector: {
         template: {
           component: "PropertyHtml",
@@ -103,44 +105,48 @@ export default {
     paleteItems.push({
       tag: "JddControl",
       label: "Caja texto simple",
-      inspector: {},
+      icon: "fas fa-i-cursor",
+      inspector: { },
       content: {
         tag: "JddControl",
         component: "TextInput",
-        $: {}
+        $: {  }
       }
     });
     // TextBox
     paleteItems.push({
       tag: "JddControl",
       label: "Caja texto",
-      inspector: {},
+      icon: "fas fa-align-justify",
+      inspector: { },
       content: {
         tag: "JddControl",
         component: "TextBox",
-        $: {}
+        $: {  }
       }
     });
     // Checkbox
     paleteItems.push({
       tag: "JddControl",
       label: "Check",
-      inspector: {},
+      icon: "far fa-check-square",
+      inspector: { },
       content: {
         tag: "JddControl",
         component: "Checkbox",
-        $: {}
+        $: { }
       }
     });
     // Upload
     paleteItems.push({
       tag: "JddControl",
       label: "Subir Doc.",
-      inspector: {},
+      icon: "fas fa-upload",
+      inspector: { },
       content: {
         tag: "JddControl",
         component: "SimpleUpload",
-        $: {}
+        $: { }
       }
     });
     const errores = {};
