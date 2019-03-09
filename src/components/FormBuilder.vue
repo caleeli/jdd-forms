@@ -76,12 +76,21 @@ export default {
       tag: "JddContainer",
       label: "Contenedor",
       icon: "far fa-square",
+      inspector: {
+        size: {
+          component: "PropertyString",
+          props: {}
+        },
+      },
       content: {
         tag: "JddContainer",
         class: "row",
+        component: "JddContainer",
         JddContainer: [],
         JddControl: [],
-        $: {}
+        $: {
+          size: '',
+        }
       }
     });
     // Text
