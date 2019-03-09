@@ -40838,14 +40838,16 @@ var lodash_default = /*#__PURE__*/__webpack_require__.n(lodash);
                     item.content.component === lodash_default.a.upperFirst(lodash_default.a.camelCase(this.element.$options._componentTag))
                 );
                 const properties = [];
-                Object.keys(this.value).forEach(key => {
-                    properties.push({
-                        label: key,
-                        key: key,
-                        owner: this.value,
-                        component: definition && definition.inspector &&  definition.inspector[key] ? definition.inspector[key] : 'input',
+                if (definition && definition.inspector) {
+                    Object.keys(definition.inspector).forEach(key => {
+                        properties.push({
+                            label: key,
+                            key: key,
+                            owner: this.value,
+                            component: definition.inspector[key],
+                        });
                     });
-                });
+                }
                 return properties;
             }
         },
