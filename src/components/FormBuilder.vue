@@ -142,11 +142,23 @@ export default {
       tag: "JddControl",
       label: "Subir Doc.",
       icon: "fas fa-upload",
-      inspector: { },
+      inspector: {
+        url: {
+          component: "PropertyString",
+          props: {}
+        },
+        label: {
+          component: "PropertyString",
+          props: {}
+        },
+      },
       content: {
         tag: "JddControl",
         component: "SimpleUpload",
-        $: { }
+        $: {
+          url: JSON.stringify("/api/uploadfile"),
+          label: JSON.stringify(""),
+        }
       }
     });
     const errores = {};
